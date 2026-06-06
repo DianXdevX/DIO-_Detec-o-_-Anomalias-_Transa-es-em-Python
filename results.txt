@@ -1,0 +1,54 @@
+ANOMALY DETECTION PIPELINE RESULTS
+========================================
+
+ORIGINAL DATASET
+----------------------------------------
+Original shape: (284807, 31)
+Original class distribution:
+Class
+0    0.998273
+1    0.001727
+Name: proportion, dtype: float64
+
+Initial chart saved as: class_distribution_original.png
+
+UNDERSAMPLING DATASET
+----------------------------------------
+Undersampling shape: (984, 31)
+Undersampling class distribution:
+Class
+1    0.5
+0    0.5
+Name: proportion, dtype: float64
+
+Final chart saved as: class_distribution_under.png
+
+LOGISTIC REGRESSION RESULTS
+----------------------------------------
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.93      0.95      0.94       148
+           1       0.95      0.93      0.94       148
+
+    accuracy                           0.94       296
+   macro avg       0.94      0.94      0.94       296
+weighted avg       0.94      0.94      0.94       296
+
+AUC: 0.9770818115412709
+
+RANDOM FOREST RESULTS
+----------------------------------------
+Classification report:
+              precision    recall  f1-score   support
+
+           0       0.92      0.95      0.94       148
+           1       0.95      0.92      0.93       148
+
+    accuracy                           0.94       296
+   macro avg       0.94      0.94      0.94       296
+weighted avg       0.94      0.94      0.94       296
+
+AUC: 0.9827885317750182
+
+Pipeline execution complete.
